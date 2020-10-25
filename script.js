@@ -2,7 +2,7 @@ var nama = prompt("Hai, nama kamu siapa ya?");
 confirm("Oh, Hai " + nama + ", mau bermain game?");
 
 jawaban = confirm("Kita main suit yuk\nKalo aku menang, kamu jadi pacar aku.\nKalo kamu yg menang aku jadi pacar kamu deh");
-while(jawaban) {
+while (jawaban) {
     var tanya = true;
     while (tanya) {
 
@@ -44,17 +44,18 @@ while(jawaban) {
 
         alert('Kamu memilih : ' + p + ' dan Aku memilih : ' + comp + '\nMaka hasilnya : Kamu ' + hasil);
 
-        if(hasil === "KALAH") {
+        if (hasil === "KALAH") {
             alert("Yeaahhh kamu jadi milikku");
-        } else if(hasil === "SERI") {
+        } else if (hasil === "SERI") {
             alert("Yahh seri. Kita harus berjuang bersama-sama sepertinya");
+        } else if (hasil === "memasukkan pilihan yang salah") {
+            alert("Isinya batu, gunting atau kertas aja ih. Jangan yg lain");
         } else {
             alert("Okedeh aku jadi milikmu");
         }
 
         tanya = confirm('mau bermain lagi?');
-        
+
     }
     jawaban = confirm("yakin ga mau sama aku?");
 }
-
